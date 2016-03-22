@@ -6,3 +6,16 @@
   border-radius: 3px;
   border: none;
 }
+
+.more-link {
+	border-bottom: 2px solid black;
+}
+
+a[rel=tag]{
+	color: red;
+	display: inline-block;
+	background-color: #f47771;
+	border-radius: 4px;
+	color: #000;
+	padding: 0.1rem 0.4rem;
+}

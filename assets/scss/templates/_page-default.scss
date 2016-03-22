@@ -1,10 +1,19 @@
-#page {
+.container {
   @include grid-row();
+}
+
+#page {
   margin-top: 3rem;
+  @include grid-column(10);
+  @include grid-column-position(center);
 
   .main-content {
     @include breakpoint(small) {
       @include grid-column(12);
+
+      .post {
+        margin-bottom: 3rem;
+      }
     }
 
     @include breakpoint(medium) {
