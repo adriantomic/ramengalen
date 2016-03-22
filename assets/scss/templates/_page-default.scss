@@ -2,17 +2,23 @@
   @include grid-row();
 }
 
-#page {
+#page, #single-post {
   margin-top: 3rem;
-  @include grid-column(10);
-  @include grid-column-position(center);
+  @include breakpoint(small){
+    @include grid-column(12);
+  }
+  @include breakpoint(medium){
+    @include grid-column(10);
+    @include grid-column-position(center);
+  }
+ 
 
   .main-content {
     @include breakpoint(small) {
       @include grid-column(12);
 
       .post {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
       }
     }
 
