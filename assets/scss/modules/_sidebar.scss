@@ -1,10 +1,14 @@
 .sidebar {
-  @include breakpoint(small) {
-    @include grid-column(12);
-  }
 
-  @include breakpoint(medium) {
-    @include grid-column(4);
-    margin-top: 1rem;
-  }
+	article.widget {
+		margin-bottom: 1rem;
+	}
+	@include breakpoint(small) {
+		@include grid-column(12);
+	}
+
+	@include breakpoint(medium) {
+		@include grid-column(4);
+		margin-top: 1rem;
+	}
 }
