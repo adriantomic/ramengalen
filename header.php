@@ -42,11 +42,13 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
+			<!--
 			<div class="top-bar-left show-for-medium">
 				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+					<li class="home"></li>
 				</ul>
 			</div>
+			-->
 			<div class="top-bar-right">
 				<?php foundationpress_top_bar_r(); ?>
 
@@ -55,6 +57,8 @@
 				<?php endif; ?>
 			</div>
 		</nav>
+
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="<?php bloginfo( 'template_url' ); ?>/assets/images/ramengalen_logo.svg" title="<?php bloginfo( 'name' ); ?>"></a>
 	</header>
 
 	<section class="container">

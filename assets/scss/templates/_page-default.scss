@@ -2,6 +2,14 @@
   @include grid-row();
 }
 
+#masthead {
+  text-align: center;
+  .logo {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
 #page, #single-post {
   margin-top: 3rem;
   @include breakpoint(small){
