@@ -57,7 +57,10 @@
 			</div>
 		</nav>
 
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="<?php bloginfo( 'template_url' ); ?>/assets/images/ramengalen_logo.svg" title="<?php bloginfo( 'name' ); ?>"></a>
+		<a class="logo-container" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<img class="logo" src="<?php bloginfo( 'template_url' ); ?>/assets/images/ramengalen_logo.svg" title="<?php bloginfo( 'name' ); ?>">
+			
+		</a>
 	</header>
 
 	<section class="container">
