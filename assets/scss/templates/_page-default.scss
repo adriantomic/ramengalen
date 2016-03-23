@@ -6,10 +6,25 @@
   
   background-image: url(../images/ramen-line-bg.svg);
   background-image: url(../images/ramen-line-bg.png);
-  background-size: 20vh;
+  
   background-repeat: repeat-x;
   background-position: bottom;
   padding-bottom: 3rem;
+
+  @include breakpoint(small){
+    background-size: 20vw;
+  }
+
+  @include breakpoint(medium){
+    background-size: 10vw;
+  }
+
+
+  //-webkit-animation: slide 5s linear infinite;
+  @-webkit-keyframes slide {
+    from { background-position: 0 bottom; }
+    to { background-position: -10vw bottom; }
+  }
 
   .logo-container {
     position: relative;
@@ -25,7 +40,7 @@
         margin-top: 2rem;
       }
       @include breakpoint(medium){
-        @include grid-column(6);
+        @include grid-column(5);
         @include grid-column-position(center);
         margin-top: 0;
 
