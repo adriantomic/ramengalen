@@ -32,23 +32,31 @@
     color: #B9B9B9;
   }
 
+  .menu > li:not(.menu-text) > a {
+    background-color: transparent;
+    
+  }
+
   .menu a {
     height: 45px;
     line-height: 45px;
-    color: #e6e6e6;
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    color: #000;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: rem-calc(14);
     line-height: 1;
 
     &:hover:not(.button) {
-      background-color: #2a2a2a;
+      //background-color: #2a2a2a;
+      border-bottom: 3px solid black;
     }
   }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  //.menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
 
   .dropdown.menu .submenu {
     background-color: #121212;
