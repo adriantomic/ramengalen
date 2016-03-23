@@ -3,10 +3,36 @@
 }
 
 #masthead {
-  text-align: center;
-  .logo {
-    max-width: 400px;
-    margin: 0 auto;
+  
+  background-image: url(../images/ramen-line-bg.svg);
+  background-image: url(../images/ramen-line-bg.png);
+  background-size: 20vh;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  padding-bottom: 3rem;
+
+  .logo-container {
+    position: relative;
+    display: block;
+    @include grid-row();
+    text-align: center;
+    
+
+    img.logo {
+      @include breakpoint(small){
+        @include grid-column(10);
+        @include grid-column-position(center);
+        margin-top: 2rem;
+      }
+      @include breakpoint(medium){
+        @include grid-column(6);
+        @include grid-column-position(center);
+        margin-top: 0;
+
+      }
+    }
+
+    
   }
 }
 
@@ -19,7 +45,7 @@
     @include grid-column(10);
     @include grid-column-position(center);
   }
- 
+
 
   .main-content {
     @include breakpoint(small) {
@@ -27,6 +53,11 @@
 
       .post {
         margin-bottom: 2rem;
+
+        .tags {
+          font-family: $header-font-family;
+          margin-top: 2rem;
+        }
       }
     }
 
