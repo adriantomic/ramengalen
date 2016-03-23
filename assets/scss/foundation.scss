@@ -7,6 +7,9 @@
   Licensed under MIT Open Source
 */
 
+// Ramengalen
+@import "global/colors";
+
 //  Settings
 @import "global/settings"; // Foundation settings file.
 
@@ -19,7 +22,7 @@
 
 // Third-party libraries
 @import 'font-awesome';
-@import 'motion-ui';
+//@import 'motion-ui';
 
 // Foundation global styles
 @include foundation-global-styles;
@@ -67,8 +70,8 @@
 // @include foundation-flex-classes;
 
 // Motion UI
-@include motion-ui-transitions;
-@include motion-ui-animations;
+//@include motion-ui-transitions;
+//@include motion-ui-animations;
 
 /*
   My custom styles:
@@ -88,8 +91,10 @@
 
 // Templates
 @import "templates/front";
-@import "templates/kitchen-sink";
+//@import "templates/kitchen-sink";
 @import "templates/page-default";
 @import "templates/page-sidebar-left";
 @import "templates/page-full-width";
 @import "templates/single-post";
+
+
