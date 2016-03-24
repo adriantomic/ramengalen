@@ -52,10 +52,17 @@
 
 		background-image: url(../images/ramen-line-bg.svg);
 		background-image: url(../images/ramen-line-bg.png);
-		background-size: 20vh;
 		background-repeat: repeat-x;
 		background-position: top;
 		padding-top: 2.5rem;
+
+		@include breakpoint(small){
+		    background-size: 20vw;
+		  }
+
+		  @include breakpoint(medium){
+		    background-size: 10vw;
+		  }
 	}
 
 	@include breakpoint(medium) {

@@ -23,8 +23,15 @@
 		margin-top: 2rem;
 		margin-bottom: 0;
 		border: none;
-		background-size: 6vw;
 		background-repeat: repeat-x;
+
+		@include breakpoint(small){
+		    background-size: 15vw;
+		  }
+
+		  @include breakpoint(medium){
+		    background-size: 6vw;
+		  }
 	}
 
 	&:last-child {
