@@ -57,6 +57,9 @@ var PATHS = {
     // Motion UI
     //'assets/components/motion-ui/motion-ui.js',
 
+    // Lazy Load
+    'assets/components/jquery_lazyload/jquery.lazyload.js',
+
     // Include your own custom scripts (located in the custom folder)
     'assets/javascript/custom/*.js',
   ],
