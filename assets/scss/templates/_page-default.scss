@@ -82,3 +82,19 @@
   }
 
 }
+
+#respond, #comments {
+  background-image: url(../images/ramen-line-bg.png);
+  background-repeat: repeat-x;
+  background-position: top;
+  padding-top: 3rem;
+  margin-top: 2rem; 
+
+  @include breakpoint(small){
+    background-size: 15vw;
+  }
+
+  @include breakpoint(medium){
+    background-size: 6vw;
+  }
+}
