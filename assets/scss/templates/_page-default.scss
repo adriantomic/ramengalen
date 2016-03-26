@@ -37,7 +37,7 @@
       @include breakpoint(small){
         @include grid-column(10);
         @include grid-column-position(center);
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
       @include breakpoint(medium){
         @include grid-column(5);
