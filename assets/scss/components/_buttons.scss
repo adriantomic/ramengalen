@@ -4,6 +4,10 @@
 	text-transform: uppercase;
 	border-radius: 10px;
 	padding-bottom: 0.6em;
+
+	&:active {
+	    transform: scale(0.95);
+	}
 }
 .more-link {
 	border-bottom: 3px solid black;
