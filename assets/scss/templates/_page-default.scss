@@ -97,6 +97,10 @@
   @include breakpoint(medium){
     background-size: 6vw;
   }
+
+  #allowed_tags {
+    font-size: rem-calc(14);
+  }
 }
 
 .pagination {
@@ -119,4 +123,8 @@
           }
 
     }
+}
+
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+  border-radius: 10px;
 }

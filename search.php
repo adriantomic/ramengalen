@@ -7,7 +7,7 @@
  */
 
 get_header(); ?>
-
+<div id="page" role="main">
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
@@ -40,5 +40,6 @@ get_header(); ?>
 
 	</div>
 	<?php get_sidebar(); ?>
+</div>
 </div>
 <?php get_footer();
