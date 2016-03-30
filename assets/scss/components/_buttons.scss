@@ -9,9 +9,10 @@
 	    transform: scale(0.95);
 	}
 }
-.more-link {
+a.more-link {
 	border-bottom: 3px solid black;
 	font-weight: bold;
+	text-decoration: none !important;
 }
 
 a[rel=tag]{ // Tags
